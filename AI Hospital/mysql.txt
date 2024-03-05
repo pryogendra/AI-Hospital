@@ -1,0 +1,20 @@
+//create databases
+
+create database ai_hospital;
+
+//use database
+
+use ai_hospital;
+
+//table createtion
+
+create table disease_lists(no int primary key not null auto_increment,disease_name varchar(40) not null,symptom1 varchar(50),symptom2 varchar(50),symptom3 varchar(50),symptom4 varchar(50),symptom5 varchar(50));
+
+// create register table
+
+create table register(no int primary key not null auto_increment,name varchar(30) not null,age int, email varchar(50),mobile bigint(15),location varchar(30),disease varchar(30));
+//insert value
+
+insert disease_lists values(1,"Fever","s","a","c","r","t");
+insert disease_lists values(2,"Fever1","sq","aq","cq","rq","tq");
+insert disease_lists values(3,"Fever2","sa","aa","ca","ra","ta");
